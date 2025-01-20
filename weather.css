@@ -282,10 +282,6 @@ body {
 }
 
 @media (max-width: 705px) {
-  .main-container {
-    background-color: green;
-  }
-
   .main-content {
     width: 100%;
     height: 71%;
