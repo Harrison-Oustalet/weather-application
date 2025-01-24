@@ -15,7 +15,7 @@ class Weather {
 
   getTime() {
     const currentTime = dayjs();
-    const timeHTML = `${currentTime.format('MMMM D')}<hr style="border: 1px solid rgba(255, 255, 255, 0.4); margin: 20px; height: 135%; box-shadow: 0px 0px 5px black; border-radius: 10px;" />${currentTime.format('h:mm')}</div></div>`;
+    const timeHTML = `${currentTime.format('MMMM D')}<hr class="divider" />${currentTime.format('h:mm')}</div></div>`;
   
     document.querySelector('.time-info').innerHTML = timeHTML;
   };
@@ -77,7 +77,6 @@ class Weather {
       const dislikeObject = document.querySelector('.dislike');
 
       let thoughts = JSON.parse(localStorage.getItem('thoughts'));
-      console.log(thoughts);
 
       if (thoughts) {
         if (thoughts.includes('dis') && thoughts.includes('fill')) {
